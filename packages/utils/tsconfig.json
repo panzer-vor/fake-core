@@ -12,7 +12,7 @@
     "esModuleInterop": true,
     "importHelpers": true,
     "jsx": "react",
-    "lib": ["es2017"],
+    "lib": ["dom", "es2017"],
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "suppressImplicitAnyIndexErrors": true,
