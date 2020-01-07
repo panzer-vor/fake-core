@@ -4,7 +4,7 @@
   "devDependencies": {
     "@types/antd": "^1.0.0",
     "@types/react-dnd": "^3.0.2",
-    "lerna": "^3.18.3",
+    "lerna": "^3.20.2",
     "typescript": "^3.7.4"
   },
   "dependencies": {

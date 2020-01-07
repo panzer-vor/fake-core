@@ -1,5 +1,5 @@
 import {State} from "./type";
-import {Field, FieldType} from "fake-core-widget/DataForm/form";
+import {Field, FieldType} from "fake-core-widget/lib/DataForm/form";
 import {Pagination} from "fake-core-module";
 import {AdStatusAJAXView, ActionTypeAJAXView} from "type/api";
 import {FileFolder} from "type/file-folders";
@@ -18,7 +18,7 @@ const initialState: State = {
                 placeholder: "",
                 type: FieldType.TEXT,
                 rules: [
-                    {
+                     {
                         required: true,
                         message: "Name is required",
                     },

@@ -1,5 +1,4 @@
 import {call, Loading, register, Module, Lifecycle, APIException, SagaIterator} from "core-fe";
-import {} from "redux-saga";
 import {State, Filter, LOAD_PROMOTION_LIST, SAVE_PROMOTION_DETAIL, DELETE_PROMOTION, UPDATE_PROMOTION_STATUS, LOAD_RESTAURANT_MEAL_LIST, LOAD_RESTAURANT_MENU_LIST, LOAD_PROMOTION_DETAIL, LOAD_RESTAURANT_LIST, PROMOTION_MAIN_FILTER, PromotionDetailRequest} from "./type";
 import initialState, {initialFilter, initialPromotionDetail} from "./state";
 import {Location} from "history";
@@ -39,6 +38,7 @@ class PromotionModule extends Module<State> {
         };
         try {
             const response = yield* call(PromotionAJAXWebService.search, request);
+            console.log(response)
             pagination.total = response.total!;
             this.setState({
                 pagination,

@@ -3269,10 +3269,10 @@ fake-core-utils@0.0.2:
   resolved "https://registry.npmjs.org/fake-core-utils/-/fake-core-utils-0.0.2.tgz#4121f1aa33575014bd46f6f4f56b35bfd3de0ac8"
   integrity sha512-utaqPziuGkBoyvfLZDS5EYo+kIZxIenQfZbQvkr3FUNhDlaRHwmF/oOF4aJ//Htq/tRO0x3+issY3WwNMTJLxw==
 
-fake-core-widget@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/fake-core-widget/-/fake-core-widget-0.0.2.tgz#5a2c988cdef23a098c520081073b98b28ea59387"
-  integrity sha512-2Tp5NMFOUX0jhquyjdIFqfGuuR+dviveDA0Rxwrsss6TXPmOfU2vV7+8VjbCHbxcJTsaXp8jwEDuOp4Us70Qcg==
+fake-core-widget@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npmjs.org/fake-core-widget/-/fake-core-widget-0.0.3.tgz#3d1829beb2ec532929e3a3b38f93589a63a8c585"
+  integrity sha512-tls0ys8njjXozFd6VcY/xpD//IQVY/zHJ90B5d27QyXzAhc6fr5ibIyV4Xumr1Ka//NjEN+cp0S7h57VPmGP0w==
   dependencies:
     core-fe "^1.15.5"
     draftjs-to-html "^0.9.1"
