@@ -2,7 +2,7 @@ import React, {ReactNode} from "react";
 import {Form, Button, Row, Col} from "antd";
 import {FormComponentProps} from "antd/lib/form";
 import {Field, BaseCondition, BaseConditionType, FormUI} from "./form"
-
+import 'antd/lib/upload/style'
 import "./data-form.less";
 import DataFormItem from "./DataFormItem";
 import {WrappedFormUtils} from "antd/lib/form/Form";

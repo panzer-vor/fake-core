@@ -3160,9 +3160,9 @@ extsprintf@^1.2.0:
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
 fake-core-module@0.0.3:
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/fake-core-module/-/fake-core-module-0.0.2.tgz#2002d9d02c59874046bf677ddced82a3e2bf16cb"
-  integrity sha512-6+HinRpxfLGQnlyMTlHMQgWPXQfWrSJKQZn2C+mMfdQCj5Rh9QJnz+pLduaq+9U1YI+KjYCmI9aG0hWVgglWSw==
+  version "0.0.3"
+  resolved "https://registry.npmjs.org/fake-core-module/-/fake-core-module-0.0.3.tgz#7a5f2a7fb7d11b141090a958e59d4a2d57d6de40"
+  integrity sha512-RGz/USUH7hmjz5CzjN7kbligvTT074x6FoVUXsKpV+sHfvx9yc+NgpUpRnJZ4P6muNi0Vb9Ak6O989gA40R1Xg==
   dependencies:
     "@uifabric/icons" "^7.3.0"
     antd "^3.26.6"
@@ -3177,15 +3177,14 @@ fake-core-utils@0.0.3:
   resolved "https://registry.npmjs.org/fake-core-utils/-/fake-core-utils-0.0.2.tgz#4121f1aa33575014bd46f6f4f56b35bfd3de0ac8"
   integrity sha512-utaqPziuGkBoyvfLZDS5EYo+kIZxIenQfZbQvkr3FUNhDlaRHwmF/oOF4aJ//Htq/tRO0x3+issY3WwNMTJLxw==
 
-fake-core-widget@0.0.4:
-  version "0.0.4"
-  resolved "https://registry.npmjs.org/fake-core-widget/-/fake-core-widget-0.0.4.tgz#9071803749aca420dc545d4d8cde1c6217de8c30"
-  integrity sha512-FLnKX23kpSuzRSNUFZkUSIhC0jM0dVFsFHFOW+WyRebwnWPphr5MVAJxz4rYIKz52Uuz6TyTaaD1qum6Sq2NNg==
+fake-core-widget@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/fake-core-widget/-/fake-core-widget-0.0.5.tgz#1d5fb15ccc42e3369ac2ea612ea872bfbaa9ba86"
+  integrity sha512-upbhVLiaZnDbfCZPl+e+WS7w704/p8jUigyg2YrV/2elDj4hodi1ZLJfaGuBiycQj4v17qJ5SQomuY7BuFZLRw==
   dependencies:
     draftjs-to-html "^0.9.1"
     draftjs-utils "^0.10.2"
     html-to-draftjs "^1.5.0"
-    rc-queue-anim "^1.8.3"
     react-color "^2.17.3"
     react-draft-wysiwyg "^1.14.3"
 

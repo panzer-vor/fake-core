@@ -12,7 +12,7 @@
     "api": "node webpack/api.js"
   },
   "devDependencies": {
-    "fake-core-widget": "0.0.4",
+    "fake-core-widget": "0.0.5",
     "fake-core-module": "0.0.3",
     "fake-core-utils": "0.0.3",
     "@types/jest": "24.0.23",
