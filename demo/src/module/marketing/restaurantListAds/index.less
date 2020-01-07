@@ -1,0 +1,261 @@
+@blackColor: #323130;
+@placeholderColor: #605e5c;
+
+@font-face {
+  font-family: "Segoe-r";
+  src: url("../../../asset/fonts/segoeui.ttf");
+}
+
+@font-face {
+  font-family: "Segoe-b";
+  src: url("../../../asset/fonts/segoeuib.ttf");
+}
+
+@font-face {
+  font-family: "Segoe-sb";
+  src: url("../../../asset/fonts/seguisb.ttf");
+}
+
+.card-outer {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.ads-container {
+  margin: 5px 0;
+
+  .name {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 30px;
+  }
+
+  .content {
+    display: inline-block;
+    width: 67%;
+  }
+}
+
+.ads-container-text {
+  height: 65px;
+
+  .name {
+    height: 65px;
+    float: left;
+    text-align: right;
+    margin-right: 30px;
+    width: 100px;
+  }
+
+  .content {
+    height: 65px;
+    overflow: hidden;
+  }
+}
+
+.fti-users__table-actions {
+  white-space: nowrap;
+}
+
+.my-editor {
+  border: 1px solid #d9d9d9;
+  border-top-width: 1.02px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.bf-content {
+  height: 400px !important;
+  border-right: 379px solid #f3f2f1;
+}
+
+.bf-container .public-DraftEditor-content {
+  padding: 0 !important;
+}
+
+.bf-container {
+  max-width: 756px;
+}
+
+.bf-controlbar {
+  background: #f3f2f1;
+
+  .ant-upload.ant-upload-select {
+    height: 32px;
+  }
+}
+
+.common-drawer {
+  .ant-form {
+    max-width: inherit !important;
+
+    div .ant-row:nth-child(7) {
+      display: grid;
+    }
+
+    div .ant-row:nth-child(8) > .ant-col-sm-8 {
+      display: contents;
+    }
+  }
+
+  .ant-drawer-header {
+    padding: 23px 35px;
+  }
+
+  .ant-drawer-title {
+    font-family: "Segoe-sb", sans-serif;
+    font-size: 24px;
+    line-height: 19px;
+  }
+
+  .ant-drawer-close {
+    margin: 5px 28px;
+  }
+
+  .ant-drawer-body {
+    padding: 21px 29px 148px 35px;
+  }
+
+  .fti-form__textarea {
+    background: #f3f2f1;
+    border: none;
+  }
+
+  input {
+    border: none;
+    background: #f3f2f1;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 19px;
+    padding: 6px 17px 7px;
+    color: #000;
+    font-family: "Segoe-r", sans-serif;
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 19px;
+      color: @placeholderColor;
+      font-family: "Segoe-r", sans-serif;
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+
+  .ant-form-item label {
+    font-family: "Segoe-r", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: @blackColor;
+  }
+
+  .ant-form-item-label {
+    font-family: "Segoe-r", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 11px 0;
+    text-align: left;
+  }
+
+  .ant-select-selection {
+    border: none;
+    background: #f3f2f1;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 6px 17px 7px;
+    font-family: "Segoe-r", sans-serif;
+  }
+
+  .ant-select-selection__rendered {
+    line-height: 19px;
+    font-family: "Segoe-r", sans-serif;
+    margin-left: 0;
+  }
+
+  .ant-select-selection-selected-value {
+    font-family: "Segoe-r", sans-serif;
+    color: #000;
+  }
+
+  .ant-select-selection__placeholder,
+  .ant-select-search__field__placeholder {
+    font-family: "Segoe-r", sans-serif;
+    font-size: 12px;
+    color: @blackColor;
+  }
+
+  .special-form {
+    .ant-form-item-label {
+      float: left;
+    }
+
+    .ant-col .ant-form-item-control-wrapper {
+      float: left;
+    }
+
+    .ant-form-item .ant-switch {
+      float: left;
+    }
+  }
+
+  .ant-col-sm-16 {
+    display: contents;
+  }
+
+  // .ant-form-item-control .ant-upload,
+  // .ant-form-item-control .ant-upload.ant-upload-select-picture-card,
+  // .ant-form-item-control .ant-upload.ant-upload-drag {
+  //   margin: 40px 0 5px;
+  //   display: block;
+  //   padding: 0 22px;
+  //   width: 90px;
+  //   height: 90px;
+  // }
+
+  // .ant-form-item-control .ant-upload img,
+  // .ant-form-item-control .ant-upload.ant-upload-select-picture-card img,
+  // .ant-form-item-control .ant-upload.ant-upload-drag img {
+  //   position: absolute;
+  //   top: 40px;
+  //   right: 167px;
+  //   max-width: 90px;
+  //   max-height: 90px;
+  // }
+
+  // .ant-upload-text {
+  //   display: none;
+  // }
+
+  // .ant-upload.ant-upload-select-picture-card {
+  //   background: #f3f2f1;
+  //   border: 1px dashed #605e5c;
+  //   border-radius: 4px;
+  // }
+
+  // .anticon svg {
+  //   width: 16px;
+  //   height: 16px;
+  // }
+
+  // .ant-form-item-control .ant-upload,
+  // .ant-form-item-control .ant-upload.ant-upload-select-picture-card,
+  // .ant-form-item-control .ant-upload.ant-upload-drag {
+  //   position: relative;
+  //   right: 255px;
+  //   top: 37px;
+  //   margin-bottom: 33px;
+  // }
+
+  .ant-form-item-required::before {
+    color: @blackColor;
+    margin-right: 0;
+  }
+
+  .saveBtn {
+    float: right;
+    margin: 14px 0;
+  }
+}
