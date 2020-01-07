@@ -7,43 +7,11 @@
     "draftjs-to-html": "^0.9.1",
     "draftjs-utils": "^0.10.2",
     "html-to-draftjs": "^1.5.0",
-    "rc-queue-anim": "^1.8.3",
     "react-color": "^2.17.3",
     "react-draft-wysiwyg": "^1.14.3"
   },
   "scripts": {
     "build": "tsc && node build.js"
-  },
-  "devDependencies": {
-    "@rollup/plugin-json": "^4.0.1",
-    "@svgr/rollup": "^5.0.1",
-    "@types/draftjs-to-html": "^0.8.0",
-    "@types/html-to-draftjs": "^1.4.0",
-    "@types/react": "^16.9.17",
-    "@types/react-color": "^3.0.1",
-    "@types/react-dom": "^16.9.4",
-    "@types/react-draft-wysiwyg": "^1.13.0",
-    "babel-core": "6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-runtime": "6.26.0",
-    "prop-types": "^15.5.4",
-    "react-docgen-typescript-loader": "^3.6.0",
-    "react-scripts-ts": "^3.1.0",
-    "rollup": "^1.28.0",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-clear": "^2.0.7",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-eslint": "^7.0.0",
-    "rollup-plugin-json": "^4.0.0",
-    "rollup-plugin-less": "^1.1.2",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-typescript2": "^0.25.3",
-    "rollup-plugin-url": "^3.0.1",
-    "ts-loader": "^6.2.1",
-    "tslib": "^1.10.0",
-    "typescript": "^3.7.4"
   },
   "gitHead": "476237b1a938596002bc5ada4d0a9b2d56da5a98"
 }

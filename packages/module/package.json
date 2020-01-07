@@ -16,7 +16,6 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@types/antd": "^1.0.0",
     "chalk": "^3.0.0"
   },
   "gitHead": "476237b1a938596002bc5ada4d0a9b2d56da5a98"
