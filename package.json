@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "@types/antd": "^1.0.0",
+    "@types/react-dnd": "^3.0.2",
+    "lerna": "^3.18.3",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "antd": "^3.26.5",
+    "core-fe": "^1.15.5",
+    "react-dnd": "^10.0.2"
+  }
+}

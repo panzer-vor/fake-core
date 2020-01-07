@@ -1,0 +1,18 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "node": "current",
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    "flow",
+    "react",
+    "stage-2"
+  ],
+  "plugins": [
+    "external-helpers", // 这里
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": true }]
+  ]
+}

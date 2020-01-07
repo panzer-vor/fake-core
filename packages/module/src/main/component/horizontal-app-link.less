@@ -1,0 +1,46 @@
+.horizontal-app-link-btn {
+  display: flex;
+  align-items: center;
+  width: 146px;
+  height: 48px;
+  border: 0;
+  background: none;
+  padding: 0;
+  margin: 0 !important;
+  color: #212133;
+  transition-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+  transition-duration: 0.467s;
+  border-radius: 2px;
+  box-shadow: none;
+
+  .horizontal-app-link-btn-icon {
+    display: block;
+    font-size: 26px;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    margin: 0;
+    color: #a0006c;
+    flex-shrink: 0;
+  }
+
+  .horizontal-app-link-btn-text {
+    height: 46px;
+    line-height: 18px;
+    text-align: left;
+    margin: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 0;
+    flex-shrink: 1;
+    white-space: normal;
+  }
+
+  &:hover {
+    color: rgb(160, 0, 107);
+    box-shadow: rgba(0, 0, 0, 0.133) 0 6.4px 14.4px 0, rgba(0, 0, 0, 0.11) 0 1.2px 3.6px 0;
+    background: rgb(255, 255, 255);
+  }
+}

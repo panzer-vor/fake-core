@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Segoe-r";
+  src: url-loader("../../asset/fonts/segoeui.ttf");
+}
+
+@font-face {
+  font-family: "Segoe-b";
+  src: url-loader("../../asset/fonts/segoeuib.ttf");
+}
+
+@font-face {
+  font-family: "Segoe-sb";
+  src: url-loader("../../asset/fonts/seguisb.ttf");
+}
+
+.fti-page {
+  position: relative;
+  background: none;
+
+  table > thead {
+    font-family: "Segoe-sb", sans-serif;
+  }
+
+  table > tbody {
+    font-family: "Segoe-r", sans-serif;
+  }
+
+  &.fti-page--loading {
+    opacity: 0.8;
+  }
+
+  .ant-divider {
+    margin: 0;
+    background: #f3f2f1;
+
+    &.ant-divider-vertical {
+      margin: 0 8px;
+    }
+  }
+
+  .fti-page__loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .ant-skeleton {
+    padding: 16px;
+  }
+
+  .ant-table-placeholder {
+    border: 0;
+  }
+}
+
+.ant-page-header {
+  background: none;
+  min-height: 64px;
+  padding: 13px 0 17px;
+
+  .ant-page-header-title-view-title {
+    font-size: 24px;
+    line-height: 19px;
+    font-weight: normal;
+    font-family: "Segoe-sb", sans-serif;
+  }
+
+  .ant-page-header-title-view-sub-title {
+    font-size: 12px;
+    line-height: 19px;
+    color: #605e5c;
+    display: block;
+    font-family: "Segoe-r", sans-serif;
+  }
+
+  .ant-page-header-title-view-extra {
+    right: 0;
+  }
+}
+
+.fti-page__main {
+  // background: #fff;
+  // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+
+  .ant-skeleton-content {
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.06);
+    padding: 16px 24px;
+  }
+}
+
+.fti-page__main-white {
+  background: #fff;
+  padding: 14px 32px;
+}
+
+.ant-drawer-body {
+  .fti-page__main {
+    box-shadow: none;
+  }
+}
+
+.fti-page__content {
+  // padding: 16px 24px;
+
+  .ant-table-wrapper {
+    // margin: 0 -24px;
+
+    .ant-table-thead > tr {
+      background: none;
+    }
+
+    .ant-table-pagination {
+      padding-right: 16px;
+    }
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+      padding: 12px 16px 11px 0;
+      font-size: 14px;
+      line-height: 19px;
+      font-weight: normal;
+      color: #323130;
+    }
+
+    .ant-table-tbody > tr:last-child > td {
+      border: 0;
+    }
+
+    .ant-table-tbody > tr > td {
+      border-bottom: 1px solid #f3f2f1;
+    }
+
+    .ant-table-thead > tr > th {
+      border-bottom: 1px solid #f3f2f1;
+    }
+  }
+}
+
+.ant-layout-footer {
+  background: #fff;
+}
+
+.ant-btn {
+  margin-left: 8px;
+  font-family: "Segoe-r", sans-serif;
+
+  &:first-child {
+    margin: 0;
+  }
+}
