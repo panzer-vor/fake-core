@@ -12,7 +12,7 @@ import {PromotionEligibilityAJAXView, PromotionStatusAJAXView, PromotionTypeAJAX
 import * as R from "ramda";
 import "./index.less";
 import {dateFormat} from "./tools";
-import {DateFormat} from "@core/utils";
+import {DateFormat} from "fake-core-utils";
 interface Props extends FormComponentProps {
     searchLoading: boolean;
     clearInput: () => void;

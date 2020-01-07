@@ -1,6 +1,6 @@
 import React from "react";
 import {Table, PageHeader, Row, Col, Button, Popconfirm} from "antd";
-import {Page} from "@core/module";
+import {Page} from "fake-core-module";
 import {PromotionListState, LOAD_PROMOTION_LIST, APPLIED_TO_TYPE, DELETE_PROMOTION, PROMOTION_STATUS, PROMOTION_TYPE, PROMOTION_ELIGIBILITY_FILTER} from "../type";
 import {PaginationConfig} from "antd/lib/table";
 import {SearchPromotionAJAXResponse$Promotion, PromotionTypeAJAXView, PromotionStatusAJAXView, PromotionEligibilityAJAXView} from "type/api";
@@ -10,11 +10,11 @@ import {connect} from "react-redux";
 import {actions} from "../";
 import {showLoading} from "core-fe";
 import {Link} from "react-router-dom";
-import {Pagination} from "@core/widget";
+import {Pagination} from "fake-core-widget";
 import PromotionFilter from "./PromotionFilter";
 import "./index.less";
 import {dateFormat} from "./tools";
-import {getUTCDate} from "@core/utils";
+import {getUTCDate} from "fake-core-utils";
 interface Props extends PromotionListState {
     changePage: (current?: number, limit?: number) => void;
     deletePromotion: (code: string) => void;

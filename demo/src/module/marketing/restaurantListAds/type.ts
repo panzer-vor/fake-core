@@ -1,6 +1,6 @@
 import {SearchAppStartAdAJAXResponse$Ad, ListRestaurantAJAXAdResponse$Ad} from "type/api";
-import {Pagination} from "@core/module";
-import {Field} from "@core/widget/DataForm/form";
+import {Pagination} from "fake-core-module";
+import {Field} from "fake-core-widget/DataForm/form.ts";
 export const LOAD_BANNER_LIST = "LOAD_BANNER_LIST";
 export const SUBMIT_BANNER = "SUBMIT_BANNER";
 export const LOAD_RESTAURANT_LIST_ADS = "LOAD_RESTAURANT_LIST_ADS";

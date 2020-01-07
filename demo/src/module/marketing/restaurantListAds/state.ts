@@ -1,6 +1,6 @@
 import {State} from "./type";
-import {Field, FieldType} from "@core/widget/DataForm/form";
-import {Pagination} from "@core/module";
+import {Field, FieldType} from "fake-core-widget/DataForm/form";
+import {Pagination} from "fake-core-module";
 import {AdStatusAJAXView, ActionTypeAJAXView} from "type/api";
 import {FileFolder} from "type/file-folders";
 

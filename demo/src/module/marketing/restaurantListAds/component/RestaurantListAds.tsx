@@ -1,6 +1,6 @@
 import React from "react";
 import {Button, Popconfirm, Icon, Modal, Drawer} from "antd";
-import {Page} from "@core/module";
+import {Page} from "fake-core-module";
 import {connect} from "react-redux";
 import {RootState} from "type/state";
 import {RestaurantListAdsState, LOAD_RESTAURANT_LIST_ADS} from "../type";
@@ -8,7 +8,7 @@ import "../index.less";
 import {Dispatch} from "redux";
 import {actions} from "..";
 import {showLoading} from "core-fe";
-import {DragableTable} from "@core/widget";
+import {DragableTable} from "fake-core-widget";
 import {ActionTypeAJAXView, ListRestaurantAJAXAdResponse$Ad} from "type/api";
 import RestaurantListAdsInfoComponent from "./RestaurantListAdsInfo";
 

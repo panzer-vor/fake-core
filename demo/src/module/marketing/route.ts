@@ -1,4 +1,4 @@
-import {FTIRoute} from "@core/module/types/route";
+import {FTIRoute} from "fake-core-module/types/route";
 import adRoute from "./restaurantListAds/route";
 import promotionRoute from "./promotion/route";
 const routes: FTIRoute = {

@@ -1,4 +1,4 @@
-import {startApp} from "@core/module";
+import {startApp} from "fake-core-module";
 import axios from "axios";
 import {Modal} from "antd";
 import {FTIRoutes} from "./route";

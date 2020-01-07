@@ -1,5 +1,5 @@
 import {State} from "./type";
-import {Pagination} from "@core/module";
+import {Pagination} from "fake-core-module";
 import {dateFormat} from "./component/tools";
 export const initialFilter = {
     code: null,

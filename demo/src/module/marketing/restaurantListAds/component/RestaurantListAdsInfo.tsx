@@ -4,7 +4,7 @@ import {Dispatch} from "redux";
 import {RootState} from "type/state";
 import {showLoading} from "core-fe";
 import {Button, Icon, Modal, Spin} from "antd";
-import {DataForm} from "@core/widget";
+import {DataForm} from "fake-core-widget";
 import {WrappedFormUtils} from "antd/lib/form/Form";
 import {actions} from "..";
 import {RouteProps} from "react-router";

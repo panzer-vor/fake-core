@@ -173,15 +173,6 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@core/module@file:../packages/module/lib":
-  version "0.0.0"
-
-"@core/utils@file:../packages/utils/lib":
-  version "0.0.0"
-
-"@core/widget@file:../packages/widget/lib":
-  version "0.0.0"
-
 "@icons/material@^0.2.4":
   version "0.2.4"
   resolved "https://registry.npm.taobao.org/@icons/material/download/@icons/material-0.2.4.tgz#e90c9f71768b3736e76d7dd6783fc6c2afa88bc8"
@@ -525,6 +516,11 @@
   version "12.12.17"
   resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-12.12.17.tgz?cache=0&sync_timestamp=1577119952955&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-12.12.17.tgz#191b71e7f4c325ee0fb23bc4a996477d92b8c39b"
   integrity sha1-GRtx5/TDJe4PsjvEqZZHfZK4w5s=
+
+"@types/node@13.1.2":
+  version "13.1.2"
+  resolved "https://registry.npmjs.org/@types/node/-/node-13.1.2.tgz#fe94285bf5e0782e1a9e5a8c482b1c34465fa385"
+  integrity sha512-B8emQA1qeKerqd1dmIsQYnXi+mmAzTB7flExjmy5X1aVAKFNNNDubkavwR13kR6JnpeLp3aLoJhwn9trWPAyFQ==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -998,6 +994,66 @@ antd@3.26.3:
     css-animation "^1.5.0"
     dom-closest "^0.2.0"
     enquire.js "^2.1.6"
+    lodash "^4.17.13"
+    moment "^2.24.0"
+    omit.js "^1.0.2"
+    prop-types "^15.7.2"
+    raf "^3.4.1"
+    rc-animate "^2.10.2"
+    rc-calendar "~9.15.7"
+    rc-cascader "~0.17.4"
+    rc-checkbox "~2.1.6"
+    rc-collapse "~1.11.3"
+    rc-dialog "~7.6.0"
+    rc-drawer "~3.1.1"
+    rc-dropdown "~2.4.1"
+    rc-editor-mention "^1.1.13"
+    rc-form "^2.4.10"
+    rc-input-number "~4.5.0"
+    rc-mentions "~0.4.0"
+    rc-menu "~7.5.1"
+    rc-notification "~3.3.1"
+    rc-pagination "~1.20.11"
+    rc-progress "~2.5.0"
+    rc-rate "~2.5.0"
+    rc-resize-observer "^0.1.0"
+    rc-select "~9.2.0"
+    rc-slider "~8.7.1"
+    rc-steps "~3.5.0"
+    rc-switch "~1.9.0"
+    rc-table "~6.10.5"
+    rc-tabs "~9.7.0"
+    rc-time-picker "~3.7.1"
+    rc-tooltip "~3.7.3"
+    rc-tree "~2.1.0"
+    rc-tree-select "~2.9.1"
+    rc-trigger "^2.6.2"
+    rc-upload "~2.9.1"
+    rc-util "^4.16.1"
+    react-lazy-load "^3.0.13"
+    react-lifecycles-compat "^3.0.4"
+    react-slick "~0.25.2"
+    resize-observer-polyfill "^1.5.1"
+    shallowequal "^1.1.0"
+    warning "~4.0.3"
+
+antd@^3.26.6:
+  version "3.26.6"
+  resolved "https://registry.npmjs.org/antd/-/antd-3.26.6.tgz#7e583e11e757679ca6d2fda0bc418a177f5d3653"
+  integrity sha512-GgDiGjY/DooqpPxcWSMk8Xhj6hF1KuyIHzFZ/BgjpaXF+Ca9MKHch8Vmo5yuUPiXekbaOyoKaZj8g/Z2Tr3Lxg==
+  dependencies:
+    "@ant-design/create-react-context" "^0.2.4"
+    "@ant-design/icons" "~2.1.1"
+    "@ant-design/icons-react" "~2.0.1"
+    "@types/react-slick" "^0.23.4"
+    array-tree-filter "^2.1.0"
+    babel-runtime "6.x"
+    classnames "~2.2.6"
+    copy-to-clipboard "^3.2.0"
+    css-animation "^1.5.0"
+    dom-closest "^0.2.0"
+    enquire.js "^2.1.6"
+    is-mobile "^2.1.0"
     lodash "^4.17.13"
     moment "^2.24.0"
     omit.js "^1.0.2"
@@ -2149,10 +2205,38 @@ core-fe@1.15.3:
     regenerator-runtime "0.13.3"
     tslib "1.10.0"
 
+core-fe@^1.15.3, core-fe@^1.15.5:
+  version "1.15.5"
+  resolved "https://registry.npmjs.org/core-fe/-/core-fe-1.15.5.tgz#b4c6e4f07c87a74995776a9b59948c0f7d7e63c2"
+  integrity sha512-M+8ms96sMNxn7AHXxDLNVzDYc6jGO7E+rgU4Y9JTxOSb/NkKVwTHzSkAUA024a6SUxk6+k+imdsch4mo0JItJQ==
+  dependencies:
+    "@types/node" "13.1.2"
+    "@types/react" "*"
+    "@types/react-dom" "16.9.4"
+    "@types/react-redux" "7.1.5"
+    "@types/react-router" "5.1.3"
+    "@types/react-router-dom" "5.1.3"
+    axios "0.19.0"
+    connected-react-router "6.6.1"
+    core-js "3.6.1"
+    react "16.12.0"
+    react-dom "16.12.0"
+    react-redux "7.1.3"
+    react-router-dom "5.1.2"
+    redux "4.0.5"
+    redux-saga "1.1.3"
+    regenerator-runtime "0.13.3"
+    tslib "1.10.0"
+
 core-js@3.4.8:
   version "3.4.8"
   resolved "https://registry.npm.taobao.org/core-js/download/core-js-3.4.8.tgz#e0fc0c61f2ef90cbc10c531dbffaa46dfb7152dd"
   integrity sha1-4PwMYfLvkMvBDFMdv/qkbftxUt0=
+
+core-js@3.6.1:
+  version "3.6.1"
+  resolved "https://registry.npmjs.org/core-js/-/core-js-3.6.1.tgz#39d5e2e346258cc01eb7d44345b1c3c014ca3f05"
+  integrity sha512-186WjSik2iTGfDjfdCZAxv2ormxtKgemjC3SI6PL31qOA0j5LhTDVjHChccoc7brwLvpvLPiMyRlcO88C4l1QQ==
 
 core-js@^1.0.0:
   version "1.2.7"
@@ -2779,6 +2863,11 @@ draftjs-to-html@^0.8.4:
   resolved "https://registry.npm.taobao.org/draftjs-to-html/download/draftjs-to-html-0.8.4.tgz#bda0adc00945db1f1baf0191b34b49b24191f1df"
   integrity sha1-vaCtwAlF2x8brwGRs0tJskGR8d8=
 
+draftjs-to-html@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.npmjs.org/draftjs-to-html/-/draftjs-to-html-0.9.1.tgz#1c870fbb588d2390204cb4d0ee7e04ad0c709969"
+  integrity sha512-fFstE6+IayaVFBEvaFt/wN8vdj8FsTRzij7dy7LI9QIwf5LgfHFi9zSpvCg+feJ2tbYVqHxUkjcibwpsTpgFVQ==
+
 draftjs-utils@^0.10.2:
   version "0.10.2"
   resolved "https://registry.npm.taobao.org/draftjs-utils/download/draftjs-utils-0.10.2.tgz#a7f16d2c1c174ac38ba3bbf700c256f176b2699c"
@@ -3161,6 +3250,37 @@ extsprintf@^1.2.0:
   version "1.4.0"
   resolved "https://registry.npm.taobao.org/extsprintf/download/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
+
+fake-core-module@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/fake-core-module/-/fake-core-module-0.0.2.tgz#2002d9d02c59874046bf677ddced82a3e2bf16cb"
+  integrity sha512-6+HinRpxfLGQnlyMTlHMQgWPXQfWrSJKQZn2C+mMfdQCj5Rh9QJnz+pLduaq+9U1YI+KjYCmI9aG0hWVgglWSw==
+  dependencies:
+    "@uifabric/icons" "^7.3.0"
+    antd "^3.26.6"
+    core-fe "^1.15.3"
+    rc-queue-anim "^1.8.3"
+    react-dnd "^7.6.0"
+    react-dnd-html5-backend "^7.6.0"
+    typescript "^3.7.4"
+
+fake-core-utils@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/fake-core-utils/-/fake-core-utils-0.0.2.tgz#4121f1aa33575014bd46f6f4f56b35bfd3de0ac8"
+  integrity sha512-utaqPziuGkBoyvfLZDS5EYo+kIZxIenQfZbQvkr3FUNhDlaRHwmF/oOF4aJ//Htq/tRO0x3+issY3WwNMTJLxw==
+
+fake-core-widget@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/fake-core-widget/-/fake-core-widget-0.0.2.tgz#5a2c988cdef23a098c520081073b98b28ea59387"
+  integrity sha512-2Tp5NMFOUX0jhquyjdIFqfGuuR+dviveDA0Rxwrsss6TXPmOfU2vV7+8VjbCHbxcJTsaXp8jwEDuOp4Us70Qcg==
+  dependencies:
+    core-fe "^1.15.5"
+    draftjs-to-html "^0.9.1"
+    draftjs-utils "^0.10.2"
+    html-to-draftjs "^1.5.0"
+    rc-queue-anim "^1.8.3"
+    react-color "^2.17.3"
+    react-draft-wysiwyg "^1.14.3"
 
 fast-deep-equal@^2.0.1:
   version "2.0.1"
@@ -4311,6 +4431,11 @@ is-hexadecimal@^1.0.0:
   version "1.0.3"
   resolved "https://registry.npm.taobao.org/is-hexadecimal/download/is-hexadecimal-1.0.3.tgz#e8a426a69b6d31470d3a33a47bb825cda02506ee"
   integrity sha1-6KQmppttMUcNOjOke7glzaAlBu4=
+
+is-mobile@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/is-mobile/-/is-mobile-2.1.0.tgz#4c0cab72f3358dd9986007389b30729fae80da0b"
+  integrity sha512-M5OhlZwh+aTlmRUvDg0Wq3uWVNa+w4DyZ2SjbrS+BhSLu9Po+JXHendC305ZEu+Hh7lywb19Zu4kYXu3L1Oo8A==
 
 is-number@^3.0.0:
   version "3.0.0"
@@ -7225,6 +7350,16 @@ rc-queue-anim@1.6.12:
     prop-types "^15.6.0"
     rc-tween-one "^2.3.2"
 
+rc-queue-anim@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.npmjs.org/rc-queue-anim/-/rc-queue-anim-1.8.3.tgz#0c2d5b6f373f24369ed79e2bd85daa5408133900"
+  integrity sha512-7ebMPLTEXTWSYdJ1aVNZCdkd9kU1GYbgRIEG3UwMNUgh6LHhmPupRjp9Z4v75ZC3VmikT7B3rxxFMKACRLhxkg==
+  dependencies:
+    babel-runtime "6.x"
+    prop-types "^15.6.0"
+    rc-tween-one "^2.5.0"
+    react-lifecycles-compat "^3.0.4"
+
 rc-rate@~2.5.0:
   version "2.5.0"
   resolved "https://registry.npm.taobao.org/rc-rate/download/rc-rate-2.5.0.tgz#72d4984a03d0a7a0e6779c7a79efcea27626abf6"
@@ -7403,7 +7538,7 @@ rc-trigger@^3.0.0:
     rc-animate "^3.0.0-rc.1"
     rc-util "^4.15.7"
 
-rc-tween-one@^2.3.2:
+rc-tween-one@^2.3.2, rc-tween-one@^2.5.0:
   version "2.6.8"
   resolved "https://registry.npm.taobao.org/rc-tween-one/download/rc-tween-one-2.6.8.tgz?cache=0&sync_timestamp=1575870794407&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frc-tween-one%2Fdownload%2Frc-tween-one-2.6.8.tgz#75edf141af491a28b18812dc419efa6b0238e2a7"
   integrity sha1-de3xQa9JGiixiBLcQZ76awI44qc=
@@ -7480,6 +7615,17 @@ react-draft-wysiwyg@^1.13.2:
   version "1.14.1"
   resolved "https://registry.npm.taobao.org/react-draft-wysiwyg/download/react-draft-wysiwyg-1.14.1.tgz?cache=0&sync_timestamp=1576153994555&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-draft-wysiwyg%2Fdownload%2Freact-draft-wysiwyg-1.14.1.tgz#0a6358e07a0fa1c0639db6a3b07c985616b69d41"
   integrity sha1-CmNY4HoPocBjnbajsHyYVha2nUE=
+  dependencies:
+    classnames "^2.2.6"
+    draftjs-utils "^0.10.2"
+    html-to-draftjs "^1.5.0"
+    linkify-it "^2.2.0"
+    prop-types "^15.7.2"
+
+react-draft-wysiwyg@^1.14.3:
+  version "1.14.3"
+  resolved "https://registry.npmjs.org/react-draft-wysiwyg/-/react-draft-wysiwyg-1.14.3.tgz#55a42bc772f671abcadd0c4d97c922a3560f0e4b"
+  integrity sha512-DvcL/3mjWoxpy2qabXALRy/vEOinDA72OlczN993pnAMjg2BNnQQTVS6Ja9OxNLWK4K9SPR9imCLiDe04l0qeQ==
   dependencies:
     classnames "^2.2.6"
     draftjs-utils "^0.10.2"
@@ -7668,7 +7814,7 @@ redux@4.0.4:
     loose-envify "^1.4.0"
     symbol-observable "^1.2.0"
 
-redux@^4.0.0, redux@^4.0.1, redux@^4.0.4:
+redux@4.0.5, redux@^4.0.0, redux@^4.0.1, redux@^4.0.4:
   version "4.0.5"
   resolved "https://registry.npm.taobao.org/redux/download/redux-4.0.5.tgz?cache=0&sync_timestamp=1577154206919&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fredux%2Fdownload%2Fredux-4.0.5.tgz#4db5de5816e17891de8a80c424232d06f051d93f"
   integrity sha1-TbXeWBbheJHeioDEJCMtBvBR2T8=
@@ -9145,6 +9291,11 @@ typescript@3.7.3:
   version "3.7.3"
   resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.7.3.tgz#b36840668a16458a7025b9eabfad11b66ab85c69"
   integrity sha1-s2hAZooWRYpwJbnqv60Rtmq4XGk=
+
+typescript@^3.7.4:
+  version "3.7.4"
+  resolved "https://registry.npmjs.org/typescript/-/typescript-3.7.4.tgz#1743a5ec5fef6a1fa9f3e4708e33c81c73876c19"
+  integrity sha512-A25xv5XCtarLwXpcDNZzCGvW2D1S3/bACratYBx2sax8PefsFhlYmkQicKHvpYflFS8if4zne5zT5kpJ7pzuvw==
 
 ua-parser-js@^0.7.18:
   version "0.7.21"

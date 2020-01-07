@@ -1,5 +1,5 @@
 import React, {useReducer, Reducer, useEffect, useRef, useState} from "react";
-import {Page} from "@core/module";
+import {Page} from "fake-core-module";
 import {PageHeader, Skeleton, Row, Col, Form, Input, DatePicker, Radio, Tag, Button, Table, Drawer, Checkbox, Select, Popconfirm, message} from "antd";
 import {
     LOAD_PROMOTION_DETAIL,
@@ -26,7 +26,7 @@ import {showLoading} from "core-fe";
 import * as R from "ramda";
 import {diffRestaurantsTree, dateFormat, handleApplyRestaurantItems, handleApplyRestaurantItemsRequest} from "./tools";
 import {detailTypes, DetailState, initialDetailState, detailReducer, DetailAction} from "./PromotionDetailStore";
-import {HtmlEditor} from "@core/widget";
+import {HtmlEditor} from "fake-core-widget";
 import {
     PromotionEligibilityAJAXView,
     UpdateDistributedPromotionAJAXRequest,
@@ -41,7 +41,7 @@ import {
 import moment from "moment";
 import {app} from "core-fe/lib/app";
 import {goBack} from "connected-react-router";
-import {DateFormat} from "@core/utils";
+import {DateFormat} from "fake-core-utils";
 import draftToHtml from "draftjs-to-html";
 
 interface Props extends FormComponentProps, PromotionDetailState {

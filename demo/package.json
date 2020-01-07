@@ -12,9 +12,9 @@
     "api": "node webpack/api.js"
   },
   "devDependencies": {
-    "@core/widget": "file:../packages/widget/lib",
-    "@core/module": "file:../packages/module/lib",
-    "@core/utils": "file:../packages/utils/lib",
+    "fake-core-widget": "0.0.2",
+    "fake-core-module": "0.0.2",
+    "fake-core-utils": "0.0.2",
     "@types/jest": "24.0.23",
     "@types/ramda": "^0.26.38",
     "autoprefixer": "9.7.3",

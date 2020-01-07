@@ -1,4 +1,4 @@
-import {Pagination} from "@core/module";
+import {Pagination} from "fake-core-module";
 import {SearchPromotionAJAXResponse$Promotion, PromotionApplyTypeAJAXView, CreatePromotionAJAXRequest$PromotionAppliedRestaurant, PromotionStatusAJAXView, PromotionTypeAJAXView, PromotionEligibilityAJAXView, SearchPromotionAJAXRequest} from "type/api";
 
 export const LOAD_PROMOTION_LIST = "LOAD_PROMOTION_LIST";
