@@ -15,6 +15,7 @@ module.exports = appInfo => {
     secret: '5f85bf67b864e9da86e9c2820aa7739f9146749c ',
     sandbox: true,
     callbackUrl: 'http://129.204.178.162:7001/token',
+    defalutToken: 'e6fd931d8f4bad712f0289815178949b',
   });
 
   // use for cookie sign key, should change to your own and keep security
