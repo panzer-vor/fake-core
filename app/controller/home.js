@@ -6,7 +6,7 @@ const eleme = require('eleme-openapi-sdk');
 class HomeController extends Controller {
   async index() {
     const {
-      config: { eleToken, eleConfig, defalutToken },
+      config: { eleToken, eleConfig },
       ctx,
     } = this;
     console.log(eleToken);

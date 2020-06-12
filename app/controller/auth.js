@@ -30,10 +30,10 @@ class AuthController extends Controller {
       config: { callbackUrl, defalutToken, eleConfig },
       ctx,
     } = this;
-    // const { code } = this.ctx.queries;
+    const { code } = this.ctx.queries;
     const oAuthClient = new eleme.OAuthClient(eleConfig);
     try {
-      const token = await oAuthClient.getTokenByCode('8bc9449909c7d36ab8067143ac1550b7', callbackUrl);
+      const token = await oAuthClient.getTokenByCode(code, callbackUrl);
       console.log(token.access_token);
       app.config.eleToken = token.access_token;
       ctx.body = {
