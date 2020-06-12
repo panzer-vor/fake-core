@@ -10,7 +10,12 @@ module.exports = appInfo => {
    * built-in config
    * @type {Egg.EggAppConfig}
    **/
-  const config = exports = {};
+  const config = (exports = {
+    key: 'HjNvm9P2fN',
+    secret: '5f85bf67b864e9da86e9c2820aa7739f9146749c ',
+    sandbox: true,
+    callbackUrl: 'https://ouat.buzaishudian.com/',
+  });
 
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1591880637169_4156';
