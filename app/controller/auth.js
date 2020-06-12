@@ -29,6 +29,7 @@ class AuthController extends Controller {
     const {
       app,
       config: { callbackUrl, defalutToken, eleConfig },
+      ctx,
     } = this;
     const { code } = this.ctx.queries;
 
@@ -36,6 +37,9 @@ class AuthController extends Controller {
     try {
       const token = await oAuthClient.getTokenByCode(code, callbackUrl);
       app.config.eleToken = token.access_token;
+      ctx.body = {
+        success: true,
+      };
     } catch (err) {
       app.config.eleToken = defalutToken;
       // throw err;
