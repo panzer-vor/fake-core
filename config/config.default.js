@@ -14,7 +14,7 @@ module.exports = appInfo => {
    **/
   const eleConfig = {
     key: 'HjNvm9P2fN',
-    secret: '5f85bf67b864e9da86e9c2820aa7739f9146749c ',
+    secret: '5f85bf67b864e9da86e9c2820aa7739f9146749c',
     sandbox: true,
   };
   const config = (exports = {
