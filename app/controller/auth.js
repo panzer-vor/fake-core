@@ -16,22 +16,18 @@ class AuthController extends Controller {
       sandbox,
     });
     const oAuthClient = new eleme.OAuthClient(config);
-    const result = oAuthClient.getOAuthUrl(
-      callbackUrl,
-      'state111',
-      'all'
-    );
+    const result = oAuthClient.getOAuthUrl(callbackUrl, 'state111', 'all');
     // const rpcClient = new eleme.RpcClient(token, config);
     // const shopService = new eleme.ShopService(rpcClient);
     // const shopInfo = await shopService.getShop(123456);
     ctx.redirect(result);
   }
   async getToken() {
-    const code = '3dddfc469d76ef7c6e58201d35ffdb42';
     const {
       app,
       config: { key, secret, sandbox, callbackUrl },
     } = this;
+    return this.ctx;
     const config = new eleme.Config({
       key,
       secret,

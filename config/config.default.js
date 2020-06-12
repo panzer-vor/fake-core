@@ -14,7 +14,7 @@ module.exports = appInfo => {
     key: 'HjNvm9P2fN',
     secret: '5f85bf67b864e9da86e9c2820aa7739f9146749c ',
     sandbox: true,
-    callbackUrl: 'https://ouat.buzaishudian.com/',
+    callbackUrl: 'http://129.204.178.162:7001/token',
   });
 
   // use for cookie sign key, should change to your own and keep security
