@@ -19,7 +19,7 @@ module.exports = appInfo => {
   };
   const config = (exports = {
     callbackUrl: 'http://129.204.178.162:7001/token',
-    defalutToken: 'e6fd931d8f4bad712f0289815178949b',
+    defalutToken: '4a747f2fd4698c3f386b13e49d494c3a',
     eleConfig: new eleme.Config(eleConfig),
   });
 

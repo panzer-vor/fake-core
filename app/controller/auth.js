@@ -33,12 +33,13 @@ class AuthController extends Controller {
     const { code } = this.ctx.queries;
     const oAuthClient = new eleme.OAuthClient(eleConfig);
     try {
-      const token = await oAuthClient.getTokenByCode(code, callbackUrl);
-      console.log(token.access_token);
-      app.config.eleToken = token.access_token;
-      ctx.body = {
-        success: true,
-      };
+      const result = await oAuthClient.getTokenByCode(code, callbackUrl);
+      const token = result.access_token;
+      // app.config.eleToken = token.access_token;
+      const rpcClient = new eleme.RpcClient(token, eleConfig);
+      const shopService = new eleme.ShopService(rpcClient);
+      const shopInfo = await shopService.getShop(123456);
+      ctx.body = shopInfo;
     } catch (err) {
       app.config.eleToken = defalutToken;
       console.log(err);
