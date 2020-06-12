@@ -8,17 +8,16 @@ class AuthController extends Controller {
     const {
       ctx,
       app,
-      config: { key, secret, sandbox, callbackUrl },
+      config: { eleConfig, callbackUrl },
     } = this;
 
-    const config = new eleme.Config({
-      key,
-      secret,
-      sandbox,
-    });
-    const oAuthClient = new eleme.OAuthClient(config);
+    // const config = new eleme.Config({
+    //   key,
+    //   secret,
+    //   sandbox,
+    // });
+    const oAuthClient = new eleme.OAuthClient(eleConfig);
     const result = oAuthClient.getOAuthUrl(callbackUrl, 'state111', 'all');
-    app.config.eleConfig = config;
     // const rpcClient = new eleme.RpcClient(token, config);
     // const shopService = new eleme.ShopService(rpcClient);
     // const shopInfo = await shopService.getShop(123456);
@@ -31,18 +30,18 @@ class AuthController extends Controller {
       config: { callbackUrl, defalutToken, eleConfig },
       ctx,
     } = this;
-    const { code } = this.ctx.queries;
-
+    // const { code } = this.ctx.queries;
     const oAuthClient = new eleme.OAuthClient(eleConfig);
     try {
-      const token = await oAuthClient.getTokenByCode(code, callbackUrl);
+      const token = await oAuthClient.getTokenByCode('8bc9449909c7d36ab8067143ac1550b7', callbackUrl);
+      console.log(token.access_token);
       app.config.eleToken = token.access_token;
       ctx.body = {
         success: true,
       };
     } catch (err) {
       app.config.eleToken = defalutToken;
-      // throw err;
+      console.log(err);
     }
   }
 }

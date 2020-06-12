@@ -6,10 +6,10 @@ const eleme = require('eleme-openapi-sdk');
 class HomeController extends Controller {
   async index() {
     const {
-      config: { eleToken, eleConfig },
+      config: { eleToken, eleConfig, defalutToken },
       ctx,
     } = this;
-
+    console.log(eleToken);
     const rpcClient = new eleme.RpcClient(eleToken, eleConfig);
     // 实例化一个服务对象
     const shopService = new eleme.ShopService(rpcClient);
