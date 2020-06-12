@@ -27,7 +27,8 @@ class AuthController extends Controller {
       app,
       config: { key, secret, sandbox, callbackUrl },
     } = this;
-    return this.ctx;
+    this.ctx.body = this.ctx;
+    return;
     const config = new eleme.Config({
       key,
       secret,
