@@ -10,7 +10,7 @@ class HomeController extends Controller {
       ctx,
     } = this;
 
-    const rpcClient = new eleme.RpcClient(defalutToken, eleConfig);
+    const rpcClient = new eleme.RpcClient(eleToken || defalutToken, eleConfig);
     // 实例化一个服务对象
     const shopService = new eleme.ShopService(rpcClient);
     const shopInfo = await shopService.getShop(123456);
