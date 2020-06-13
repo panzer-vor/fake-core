@@ -26,6 +26,9 @@ class AuthController extends Controller {
       const result = await oAuthClient.getTokenByCode(code, callbackUrl);
       const token = result.access_token;
       ctx.cookies.set('token', token);
+      ctx.body = {
+        success: true,
+      };
     } catch (err) {
       ctx.cookies.set('token', defalutToken);
       console.log(err);

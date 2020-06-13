@@ -9,13 +9,16 @@ class HomeController extends Controller {
       config: { eleConfig, defalutToken },
       ctx,
     } = this;
-    console.log(ctx.cookies.get('token'));
     const token = ctx.cookies.get('token') || defalutToken;
     const rpcClient = new eleme.RpcClient(token, eleConfig);
 
     const shopService = new eleme.ShopService(rpcClient);
-    const shopInfo = await shopService.getShop(123456);
-    ctx.body = shopInfo;
+    try {
+      const shopInfo = await shopService.getShop(123456);
+      ctx.body = shopInfo;
+    } catch (err) {
+      ctx.body = err;
+    }
   }
 }
 
