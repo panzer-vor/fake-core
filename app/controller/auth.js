@@ -7,26 +7,17 @@ class AuthController extends Controller {
   async index() {
     const {
       ctx,
-      app,
       config: { eleConfig, callbackUrl },
     } = this;
 
-    // const config = new eleme.Config({
-    //   key,
-    //   secret,
-    //   sandbox,
-    // });
     const oAuthClient = new eleme.OAuthClient(eleConfig);
     const result = oAuthClient.getOAuthUrl(callbackUrl, 'state111', 'all');
-    // const rpcClient = new eleme.RpcClient(token, config);
-    // const shopService = new eleme.ShopService(rpcClient);
-    // const shopInfo = await shopService.getShop(123456);
 
     ctx.redirect(result);
   }
   async getToken() {
     const {
-      app,
+      ctx,
       config: { callbackUrl, defalutToken, eleConfig },
     } = this;
     const { code } = this.ctx.queries;
@@ -34,10 +25,9 @@ class AuthController extends Controller {
     try {
       const result = await oAuthClient.getTokenByCode(code, callbackUrl);
       const token = result.access_token;
-      console.log(token);
-      app.config.eleToken = token.access_token;
+      ctx.cookies.set('token', token);
     } catch (err) {
-      app.config.eleToken = defalutToken;
+      ctx.cookies.set('token', defalutToken);
       console.log(err);
     }
   }
